@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<body>
+<style type="text/css">
+	
+</style>
+<script type="text/javascript">
+
+	alert("Данная программа рассчитывает ваш BMI - индекс отношения массы тела к росту.");
+	var height = parseFloat(prompt("Введите ваш рост в метрах (через точку)"));
+	var mass = parseFloat(prompt("Введите ваш вес в килограммах"));
+
+	var bmi = mass / (height * height);
+
+	if (bmi <= 16) 
+	{
+		alert("У вас выраженный дефицит массы тела");
+	}
+	else if ((bmi > 16) && (bmi <= 18))
+	{
+		alert("У вас недостаточная масса тела");
+	}
+	else if ((bmi > 18) && (bmi <= 25))
+	{
+		alert("У вас нормальная масса тела");
+	}
+	else if ((bmi > 25) && (bmi <= 30))
+	{
+		alert("У вас избыточная масса тела");
+	}
+	else if ((bmi > 30) && (bmi <= 35))
+	{
+		alert("У вас ожирение первой степени");
+	}
+	else if ((bmi > 35) && (bmi <= 40))
+	{
+		alert("У вас ожирение второй степени");
+	}
+	else
+	{
+		alert("У вас морбидное ожирение");
+	}
+
+</script>
+
+
+
+</body>
+</html>
